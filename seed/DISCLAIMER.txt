@@ -1,0 +1,16 @@
+SEED DATA DISCLAIMER
+
+The files in this folder (psos.bin, blobs.bin) are pipeline render states and
+root signatures recorded from WILD HEARTS while the game was running. They
+contain no shader code, textures, models or other game assets, but they are
+derived from the game.
+
+All rights in WILD HEARTS and in any data derived from it are reserved by
+their respective owners. These files are NOT covered by the MIT License in
+the LICENSE file at the root of this repository. They are provided only so
+the pre-compiler can work with a fresh install, for use with a legitimately
+owned copy of the game, without warranty of any kind.
+
+This project is not affiliated with or endorsed by the owners of WILD HEARTS.
+If you are a rights holder and want these files removed, open an issue and
+they will be taken down.

@@ -1,0 +1,22 @@
+LIBRARY dxgi
+EXPORTS
+    CreateDXGIFactory=My_CreateDXGIFactory
+    CreateDXGIFactory1=My_CreateDXGIFactory1
+    CreateDXGIFactory2=My_CreateDXGIFactory2
+    ApplyCompatResolutionQuirking=Fwd_ApplyCompatResolutionQuirking
+    CompatString=Fwd_CompatString
+    CompatValue=Fwd_CompatValue
+    DXGID3D10CreateDevice=Fwd_DXGID3D10CreateDevice
+    DXGID3D10CreateLayeredDevice=Fwd_DXGID3D10CreateLayeredDevice
+    DXGID3D10GetLayeredDeviceSize=Fwd_DXGID3D10GetLayeredDeviceSize
+    DXGID3D10RegisterLayers=Fwd_DXGID3D10RegisterLayers
+    DXGIDeclareAdapterRemovalSupport=Fwd_DXGIDeclareAdapterRemovalSupport
+    DXGIDisableVBlankVirtualization=Fwd_DXGIDisableVBlankVirtualization
+    DXGIDumpJournal=Fwd_DXGIDumpJournal
+    DXGIGetDebugInterface1=Fwd_DXGIGetDebugInterface1
+    DXGIReportAdapterConfiguration=Fwd_DXGIReportAdapterConfiguration
+    PIXBeginCapture=Fwd_PIXBeginCapture
+    PIXEndCapture=Fwd_PIXEndCapture
+    PIXGetCaptureState=Fwd_PIXGetCaptureState
+    SetAppCompatStringPointer=Fwd_SetAppCompatStringPointer
+    UpdateHMDEmulationStatus=Fwd_UpdateHMDEmulationStatus

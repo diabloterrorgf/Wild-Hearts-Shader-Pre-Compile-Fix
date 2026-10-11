@@ -1,0 +1,38 @@
+WILD HEARTS Shader Pre-compiler - changes
+
+v1.12.0
+  - Ready for other PCs: progress is kept per graphics card, driver and game
+    folder. After a driver update, a new graphics card or a cleared shader
+    cache, everything is prepared again at the next start.
+  - Works when the game folder is read-only: progress and logs go to a
+    folder inside %LOCALAPPDATA%\WH_SHADERS instead.
+  - By default, leaves the game at least a quarter of its CPU threads (2 at
+    least), and respects CPU affinity set for the game (e.g. Process Lasso).
+  - Threads = 0 now means exactly half the CPU threads (it was capped).
+  - Shader model 6 shaders are prepared too.
+  - If the game crashes twice while the same shader is being prepared, that
+    shader is skipped until the next driver update.
+  - Overlay: always ends with "done", never passes 100%, keeps working if the
+    game recreates its window, and is no longer too bright with HDR on.
+  - The exe's shaders are prepared alongside the archives instead of after them.
+  - The deep scan no longer mistakes random data for shaders. It runs once more
+    after updating.
+  - The seed holds only render settings; the shaders it needs are taken from
+    your own game files.
+  - With Replay off, the pre-compile also covers shaders the game used before.
+  - Nothing extra is written when logging is off.
+  - Fixed: the game could hang on exit with logging on.
+  - Fixed: a crash if a program asked for a dxgi function this Windows lacks.
+  - Removed unused code; shorter settings file; plain-language README.
+
+v1.11.1  Thread priority defaults to Normal (3).
+v1.11.0  Threads default to "the CPU threads the game isn't using". Always
+         pre-compiles everything. Logging off by default. Removed the Mode and
+         DebugLayer settings.
+v1.10.3  Fewer failures: vertex and pixel shaders are paired only when every
+         input component is written.
+v1.10.2  Most remaining failures fixed (matching data types, input formats,
+         tessellation signatures, fallback state).
+v1.10.1  Deep scan of every game file for shaders. Overlay shows every phase.
+v1.10.0  Effect-file shaders (lens flares, compositing), geometry shader
+         pipelines and a fallback render state.
