@@ -13,6 +13,8 @@ driver). Windows 10/11, 64-bit.
 
 Current version: **1.12.0**. See [CHANGELOG.txt](CHANGELOG.txt).
 
+AI Warning: This was developed using Opus 5.5 but source has been screened for sanity and unnecessary "slop" removed.
+
 ## For players
 
 Download the release zip, not this source. Install, settings and troubleshooting
